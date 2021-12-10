@@ -1,0 +1,13 @@
+﻿@page
+@model RazorPagesExample.Pages.SuperHeroModel
+@{
+}
+<h1>Superheroes rules!</h1>
+<p>@ViewData["Title"]</p>
+
+<ul>
+    @foreach (var hero in Model.Heroes)
+    {
+        <li>@hero</li>
+    }
+</ul>
