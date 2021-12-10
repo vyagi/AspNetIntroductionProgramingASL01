@@ -1,0 +1,12 @@
+﻿@model SuperHero
+<h1>@Model.Name</h1>
+<p>
+    @Model.Name is @Model.Age years old and have following superpowers:
+</p>
+<ul>
+    @foreach (var skill in Model.Powers)
+    {
+        <li>@skill</li>
+    }
+</ul>
+<a asp-controller="SuperHero" asp-action="Index">Back to the heroes list</a>
